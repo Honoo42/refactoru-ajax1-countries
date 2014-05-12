@@ -20,6 +20,12 @@ app.get('/countries', function(req, res) {
 	res.send(displayCountry);
 });
 
+app.post('/search', function(req, res) {
+	req.query.query
+	// console.log(req.body);
+	res.send(req.body);
+});
+
 var server = app.listen(8260, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });

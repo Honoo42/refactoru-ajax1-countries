@@ -2,5 +2,8 @@ extends layout
 
 block content
 	h1 Adding some countries in this hizzouse!!
+	form.search-field(action)
+		input.search-query(type='text',placeholder="Please search for a Country")
+		button.btn.btn-warning.search(type="button") Search
 	.container
 		button.btn.btn-primary.country-load(type='button') Load Countries
